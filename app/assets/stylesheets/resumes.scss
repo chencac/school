@@ -1,0 +1,64 @@
+// Place all the styles related to the resumes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.resume-container {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 10px;
+  .resume-card {
+    
+    background-color: antiquewhite;
+    padding: 10px;
+    header {
+      .cover {
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .info{
+      .basic-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .username {
+          font-size: medium;
+        }
+      }
+      .intro{
+
+        a {
+          text-decoration: none;
+          color: black;
+        }
+      }
+      
+    }
+
+      .update-time {
+      }
+
+      .functions {
+        .btn {
+          text-decoration: none;
+          padding: 4px 8px;
+          color: white;
+          background-color: green;
+
+          &:hover {
+            background-color: lighten(green, 5%);
+          }
+        }
+
+        .btn-danger {
+          background-color: red;
+
+          &:hover {
+            background-color: lighten(red, 15%);
+          }
+        }
+      }
+    }
+  }

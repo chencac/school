@@ -1,0 +1,50 @@
+main {
+  max-width: 900px;
+  margin: auto;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+
+    li {
+      margin: 0 10px;
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+
+.flash{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 10px 20px;
+
+
+
+    bottom{
+        border-radius: 10px;
+        padding: 10px 12px;
+        cursor: pointer;
+    }
+}
+.flash-alert{
+    color: white;
+    background-color: red;
+  }
+  
+  .flash-notice{
+    color: white;
+    background-color: green;
+  }

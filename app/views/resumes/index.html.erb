@@ -1,0 +1,14 @@
+<h1>履歷列表</h1>
+
+<form action="">
+  <input type="text" name="keyword" value="<%= params[:keyword] %>" placeholder="輸入關鍵字">
+  <input type="submit" value="查詢">
+
+</form>
+<%= link_to '新增履歷', resumes_new_path %>
+
+<div class="resume-container">
+  <% @resumes.each do |resume| %>
+    <%= render 'resume', resume: %>
+  <% end %>
+</div>
